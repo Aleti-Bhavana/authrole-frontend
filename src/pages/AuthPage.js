@@ -10,7 +10,7 @@ const AuthPage = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/v1/auth/register", {
+      await axios.post("https://authrole-backend.onrender.com/api/v1/auth/register", {
         username,
         password,
         role,

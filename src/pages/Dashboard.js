@@ -35,7 +35,7 @@ export default function Dashboard() {
   };
 
   const handleDelete = async (id) => {
-    // ✅ Restrict users from deleting tasks
+    // Restrict users from deleting tasks
     if (userRole !== "Admin") {
       alert("User cannot delete any task");
       return; // stop here if not admin
